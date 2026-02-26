@@ -1,7 +1,10 @@
 password = "1835acfg"
-
 entrada = input("Ingrese contraseña: ")
 
+while len(entrada) <8:
+    print("No ingreso suficientes caracteres!")
+    entrada = input("Ingrese contraseña: ")
+    
 ar1 = list (entrada)
 ar2 = list(password)
 
