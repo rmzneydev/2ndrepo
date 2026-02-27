@@ -1,8 +1,8 @@
-saldo_base = 0
+saldo_base = -1.0
 
-while (saldo_base <= 0):
+while (saldo_base < 0.0):
     try:
-        saldo_base = int(input("Ingrese saldo inicial: "))
+        saldo_base = float(input("Ingrese saldo inicial: "))
     except:
         print("Error. No ingreso un saldo valido!")
 
@@ -22,11 +22,11 @@ while (selection != "4"):
         
     elif (selection == "2"):
         
-        cantidad_a_retirar = 0
+        cantidad_a_retirar = 0.0
         
-        while (cantidad_a_retirar <=0):
+        while (cantidad_a_retirar <= 0.0):
             try:
-                cantidad_a_retirar = int(input("Ingrese cantidad a retirar: "))
+                cantidad_a_retirar = float(input("Ingrese cantidad a retirar: "))
             except:
                 print("Error. No ingreso una cantidad valida!")
                 
@@ -38,11 +38,11 @@ while (selection != "4"):
             
     elif (selection == "3"):
         
-        valor_a_consignar = 0
+        valor_a_consignar = 0.0
         
-        while (valor_a_consignar <=0):
+        while (valor_a_consignar <=0.0):
             try:
-                valor_a_consignar = int(input("Ingrese cantidad a consignar: "))
+                valor_a_consignar = float(input("Ingrese cantidad a consignar: "))
             except:
                 print("Error. No ingreso una cantidad valida!")
             saldo_base = saldo_base+valor_a_consignar
